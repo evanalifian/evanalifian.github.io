@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'kanit';
+  src: url(Kanit-Medium.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(Roboto-Regular.ttf) format(truetype);
+}
+
+* {
+  font-family: 'roboto';
+}
+
+/* Header */
+header .header-profile .header-username h2 {
+  font-family: 'kanit';
+  font-style: italic;
+}
+/* Akhir Header */
+
+
+/* Links */
+ul li:active a {
+  transition: .2s;
+  transform: scale(.98);
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a i {
+  font-size: 2.7rem;
+}
+
+ul li a p {
+  font-size: 13.5px;
+}
+/* Akhir Links */
+
+
+/* Credit */
+footer p {
+  font-size: 14px;
+}
+/* Akhir Credit */
+
+
+/* Responsive Breakpoint */
+/* Tablet to laptop*/
+@media screen and (min-width: 992px) {
+  .links-group {
+    width: 768px;
+  }
+}
