@@ -1,84 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evan Profile</title>
-  <link rel="icon" href="profile.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Evan Alifian - Link Profile</title>
+
+  <!-- Bootstrap Icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!--  CSS  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Container -->
+  <!--  Container  -->
   <div class="container">
-    <!-- Header -->
-    <header class="pt-3 mb-4 d-flex flex-column align-items-sm-center">
-      <div class="header-profile d-flex gap-3 align-items-center mb-2">
-        <img src="profile-2.jpg" alt="" title="Evan" width="95" class="rounded-circle border border-primary border-3 p-1">
-        <div class="header-username">
-          <h2 class="mb-0 fw-semibold">Evan Alifian</h2>
-          <p class="mb-0">@evanalifian</p>
+    <!--  Header  -->
+    <header>
+      <div class="header-info">
+        <div class="header-profile">
+          <img src="media/profile-2.jpg" alt="profile photo" title="Evan Alifian" width="100">
+          <div class="header-name">
+            <h2>Evan Alifian</h2>
+            <p>@evanalifian</p>
+          </div>
         </div>
+        <p>A Web Developer and a student at Vocational High School 2 Bangkalan.</p>
       </div>
-      <p class="header-about mb-0">A Web Developer and a student at Vocational High School 2 Bangkalan.</p>
+      <div class="header-tabs">
+        <button class="tablink" onclick="openPage('Projects', this, '#ddd')" id="defaultOpen">Projects</button>
+        <button class="tablink" onclick="openPage('Social', this, '#ddd')">Social</button>
+      </div>
     </header>
-    <!-- Akhir Header -->
+    <!--  End Of Header  -->
 
-    <!-- Links -->
-    <ul class="links-group p-0 d-flex flex-column gap-3 mx-lg-auto">
-      <li class="list-group-item">
-        <a href="https://www.instagram.com/evanalifian/" target="_blank" class="d-flex align-items-center gap-2 px-3 border border-primary border-3 rounded-4">
-          <i class="bi bi-instagram"></i>
-          <div class="link-title">
-            <h6 class="m-0 fw-semibold">Instagram</h6>
-            <p class="m-0">Follow me on @evanalifian</p>
-          </div>
-        </a>
-      </li>
-      <li class="list-group-item">
-        <a href="https://www.facebook.com/profile.php?id=100074264594248" target="_blank" class="d-flex align-items-center gap-2 px-3 border border-primary border-3 rounded-4">
-          <i class="bi bi-facebook"></i>
-          <div class="link-title">
-            <h6 class="m-0 fw-semibold">Facebook</h6>
-            <p class="m-0">Follow me on @alifian</p>
-          </div>
-        </a>
-      </li>
-      <li class="list-group-item">
-        <a href="https://www.youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank" class="d-flex align-items-center gap-2 px-3 border border-primary border-3 rounded-4">
-          <i class="bi bi-youtube"></i>
-          <div class="link-title">
-            <h6 class="m-0 fw-semibold">Youtube</h6>
-            <p class="m-0">Watch my music video</p>
-          </div>
-        </a>
-      </li>
-      <li class="list-group-item">
-        <a href="https://github.com/evanalifian" target="_blank" class="d-flex align-items-center gap-2 px-3 border border-primary border-3 rounded-4">
-          <i class="bi bi-github"></i>
-          <div class="link-title">
-            <h6 class="m-0 fw-semibold">GitHub</h6>
-            <p class="m-0">See all my repositories on GitHub</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-    <!-- Akhir Links -->
+    <!-- Projects -->
+    <div id="Projects" class="projects tabcontent">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="" target="_blank">
+            <img src="media/Cover 6.png" alt="" width="100%">
+            <h4>Portfolio with Bootstrap v5.2.3</h4>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img src="media/Cover 5.png" alt="" width="100%">
+            <h4>Web Clone - Spotify Clone</h4>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img src="media/Cover 4.png" alt="" width="100%">
+            <h4>Personal Website</h4>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img src="media/Cover 3.png" alt="" width="100%">
+            <h4>Mini Portfolio</h4>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img src="media/Cover 1.png" alt="" width="100%">
+            <h4>Portfolio with Bootstrap v3.3.7</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Of Projects -->
 
-    <!-- Credit -->
-    <footer class="text-center pt-5 pb-3 ">
-      <p>Evan Alifian 2023, All Rights Reserved.</p>
+    <!-- Social -->
+    <div id="Social" class="social tabcontent">
+      <h2>Follow me on</h2>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/evanalifian/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100074264594248" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank"><i class="bi bi-youtube"></i> YouTube</a>
+        </li>
+        <li>
+          <a href="https://github.com/evanalifian" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Of Social -->
+
+    <!-- Footer -->
+    <footer>
+      <h3>Evan Alifian</h3>
+      Evan Alifian 2023, All Rights Reserved.
     </footer>
-    <!-- Akhir Credit -->
+    <!-- End Of Footer -->
   </div>
-  <!-- Akhir Container -->
+  <!--  End Of Container  -->
 
-
-  <!-- JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+  <!--  JavaScript  -->
+  <script src="/javascript/script.js"></script>
 </body>
 </html>
