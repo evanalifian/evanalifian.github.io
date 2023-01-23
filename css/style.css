@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+a:active {
+  background-color: unset;
+}
+
 header, .projects, .social , footer {
   padding: 20px 15px;
 }
