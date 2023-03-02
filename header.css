@@ -7,21 +7,13 @@
   box-sizing: border-box;
 }
 
-body {
+body, header {
   background-color: #eee;
   transition: .2s;
 }
 
-.dark-mode {
-  color: whitesmoke;
-  background-color: #151515;
-}
-
-.container {
-  padding: 0 1rem;
-}
-
 header {
+  padding-bottom: 10px;
   position: fixed;
   top: 0;
   right: 0;
@@ -32,6 +24,19 @@ button {
   border: 0;
   background-color: unset;
   font-size: 15px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.dark-mode {
+  color: #ddd;
+  background-color: #151515;
+}
+
+.container {
+  padding: 0 1rem;
 }
 
 
@@ -60,8 +65,12 @@ nav .nav-action.active {
 }
 
 nav .nav-action button {
-  padding: 15px 30px;
+  padding: 15px 40px;
   color: whitesmoke;
+}
+
+nav .nav-action button.active {
+  background-color: #444;
 }
 
 nav .nav-toggler {
@@ -77,34 +86,71 @@ nav .nav-toggler button {
   border: 0;
 }
 
-nav .nav-toggler button:nth-child(1) {
+nav .nav-toggler button.btn-theme {
   font-size: 30px;
   transition: .2s;
 }
 
-nav .nav-toggler button:nth-child(2) {
+nav .nav-toggler button.btn-theme.active {
+  color: whitesmoke;
+  transform: rotate(360deg);
+}
+
+nav .nav-toggler button.btn-toggler {
   border: 2px solid #666;
   border-radius: 8px;
   padding: 5px;
 }
 
-nav .nav-toggler button.dark:nth-child(2) {
+nav .nav-toggler button.dark.btn-toggler {
   border: 2px solid #999;
 }
 
-nav .nav-toggler button:nth-child(2):focus {
+nav .nav-toggler button.btn-toggler:focus {
   outline: 3px solid #444;
 }
 
-nav .nav-toggler button.dark:nth-child(2):focus {
+nav .nav-toggler button.dark.btn-toggler:focus {
   outline: 2px solid #666;
 }
 /* Akhir Navbar */
 
 
+/* Profile */
+.profile .profile-label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 5px;
+}
+
+.profile .profile-label img {
+  border: 3px solid darkcyan;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.profile .profile-label img.active {
+  border: 3px solid rgb(0, 168, 168);
+}
+
+.profile .profile-label .profile-label-title h3 {
+  color: darkcyan;
+}
+
+.profile .profile-label .profile-label-title h3.active {
+  color: rgb(0, 168, 168);
+}
+
+.profile p.profile-about {
+  margin-top: 10px;
+}
+/* Akhir Profile */
 
 
-/* ====== Responsive Breakpoint ===== */
+
+
+/* ===== Responsive Breakpoint ===== */
 /* Tablet */
 @media (min-width: 480px) {
   .container {
@@ -119,13 +165,18 @@ nav .nav-toggler button.dark:nth-child(2):focus {
     position: unset;
     background-color: unset;
   }
+
+  nav .nav-action button.active {
+    background-color: unset;
+    font-weight: bolder;
+  }
   
   nav .nav-action button {
     padding: 0;
     color: inherit;
   }
 
-  nav .nav-toggler button:nth-child(2) {
+  nav .nav-toggler button.btn-toggler {
     display: none;
   } 
 }

@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evan Alifian | Link Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <!-- ========== Header ========== -->
@@ -16,9 +17,9 @@
       <nav id="navbar">
         <h2>Linkprofile</h2>
         <div class="nav-action">
-          <button class="btn-tab" id="btn-projects">Projects</button>
-          <button class="btn-tab" id="btn-about">About</button>
-          <button class="btn-tab" id="btn-socials">Socials</button>
+          <button class="active" id="btn-projects">Projects</button>
+          <button id="btn-about">About</button>
+          <button id="btn-socials">Socials</button>
         </div>
         <div class="nav-toggler">
           <button class="btn-theme" id="btn-theme">
@@ -30,9 +31,100 @@
         </div>
       </nav>
       <!-- Akhir Navbar -->
+
+      <!-- Profile -->
+      <div class="profile" id="profile">
+        <div class="profile-label">
+          <img src="media/profile-2.jpg" alt="profile picture" width="80px">
+          <div class="profile-label-title">
+            <h3>Evan Alifian</h3>
+            <p>@evanalifian</p>
+          </div>
+        </div>
+        <p class="profile-about">A Student, Web Developer, and such a Music Maker.</p>
+      </div>
+      <!-- Akhir Profile -->
+      <br>
+      <hr>
     </div>
   </header>
   <!-- ========== Akhir Header ========== -->
+
+  <!-- ========= Main ========= -->
+  <main>
+    <div class="container">
+      <h3 class="main-title" id="main-title">Projects</h3>
+      
+      <!-- Projects Section -->
+      <ul class="projects-section active">
+        <li>
+          <img src="media/Cover 1.png" alt="" width="100%">
+        </li>
+        <li>
+          <img src="media/Cover 2.png" alt="" width="100%">
+        </li>
+        <li>
+          <img src="media/Cover 3.png" alt="" width="100%">
+        </li>
+        <li>
+          <img src="media/Cover 4.png" alt="" width="100%">
+        </li>
+        <li>
+          <img src="media/Cover 5.png" alt="" width="100%">
+        </li>
+        <li>
+          <img src="media/Cover 6.png" alt="" width="100%">
+        </li>
+      </ul>
+      <!-- Akhir Projects Section -->
+
+      <!-- About Section -->
+      <div class="about-section" id="about-section">
+        <p><b>Evan Rafa Radya Alifian</b> is a student at Vocational High School 2 Bangkalan, Madura, Indonesia. Evan was born in <i>19 October 2005</i> and he grow up in Kamal, Madura. At his school, he is studying about <i><b>Web Development</b></i> using HTML, CSS, JavaScript, and PHP. He also learn web framework like Bootstrap, Laravel, and Vue JS.</p>
+        <br>
+        <p>And lastly, he also has a <a href="https://www.youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank">YouTube</a> channel that contains of his music.</p>
+      </div>
+      <!-- Akhir About Section -->
+
+      <!-- Socials Section -->
+      <ul class="socials-section" id="socials-section">
+        <li>
+          <a href="https://www.instagram.com/evanalifian/" target="_blank" class="social-link">
+            <i class="ri-instagram-fill"></i>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100074264594248" target="_blank" class="social-link">
+            <i class="ri-facebook-circle-fill"></i>
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig" target="_blank" class="social-link">
+            <i class="ri-youtube-fill"></i>
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/evanalifian" target="_blank" class="social-link">
+            <i class="ri-github-fill"></i>
+            GitHub
+          </a>
+        </li>
+      </ul>
+      <!-- Akhir Socials Section -->
+    </div>
+  </main>
+  <!-- ========= Akhir Main ========= -->
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="container">
+      <p>&copy;2023 Evan Alifian, All Rights Rederved.</p>
+    </div>
+  </footer>
+  <!-- ========== Akhir Footer ========== -->
 
 
   <script src="script.js"></script>
