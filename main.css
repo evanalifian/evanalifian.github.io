@@ -130,10 +130,10 @@ footer p {
 
 
 /* ===== Responsive Breakpoint ===== */
-/* Mobile Phone #2 */
+/* Mobile Phone */
 @media (max-width: 423px) {
   main {
-    padding-top: 14rem;
+    padding-top: 15rem;
   }
 }
 
