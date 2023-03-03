@@ -146,6 +146,7 @@ nav .nav-toggler button.dark.btn-toggler:focus {
 
 .profile p.profile-about {
   margin-top: 10px;
+  font-style: italic;
 }
 /* Akhir Profile */
 
