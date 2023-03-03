@@ -1,5 +1,5 @@
 main {
-  padding-top: 14rem;
+  padding-top: 13rem;
 }
 
 main h3.main-title {
@@ -26,6 +26,8 @@ main .projects-section li {
   padding: 2px;
   border: 2px solid #666;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
 main .projects-section li.active {
@@ -34,6 +36,25 @@ main .projects-section li.active {
 
 main .projects-section li img {
   border-radius: 4px;
+}
+
+main .projects-section li p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333b9;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+main .projects-section li:hover p {
+  display: flex;
 }
 /* Akhir Projects Section */
 
@@ -109,7 +130,21 @@ footer p {
 
 
 /* ===== Responsive Breakpoint ===== */
+/* Mobile Phone #2 */
+@media (max-width: 423px) {
+  main {
+    padding-top: 14rem;
+  }
+}
+
 /* Mini Mobile Phone */
 @media (max-width: 320px) {
+  main .projects-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 
+  main .projects-section li p {
+    font-size: 13px;
+  }
 }
