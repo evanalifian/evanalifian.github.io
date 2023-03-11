@@ -144,9 +144,12 @@ nav .nav-toggler button.dark.btn-toggler:focus {
   color: rgb(0, 168, 168);
 }
 
+.profile .profile-label .profile-label-title p  {
+  font-style: italic;
+}
+
 .profile p.profile-about {
   margin-top: 10px;
-  font-style: italic;
 }
 /* Akhir Profile */
 
